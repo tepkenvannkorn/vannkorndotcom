@@ -29,7 +29,7 @@ function insert_fb_in_head() {
 
 	if ( ! has_post_thumbnail( $post->ID ) ) { // the post does not have featured image, use a default image
 
-		$default_image = get_stylesheet_directory_uri() . "/images/default-thumbnail.png";
+		$default_image = get_stylesheet_directory_uri() . "/assets/images/screenshot.png";
 		
 		echo "<meta property='og:image' content='" . $default_image . "' />";
 
@@ -38,6 +38,8 @@ function insert_fb_in_head() {
 		echo "<meta property='og:image:width' content='1024' />";
 
 		echo "<meta property='og:image:height' content='768' />";
+
+		echo "<meta property='og:description' content=\"" .  wp_trim_words( get_the_content(), 80, '' ) . "\" />";
 		
 	} else {
 	
@@ -70,38 +72,10 @@ function insert_fb_in_head() {
 
 	echo "<meta property='og:type' content='article' />";
 	
-	//echo "<meta property='og:description' content='" .  wp_trim_words( get_the_content(), 10, '' ) . "' />";
+	echo "<meta property='og:description' content=\"" .  wp_trim_words( get_the_content(), 20, '' ) . "\" />";
 
 	echo "<meta property='og:description' content='' />";
 
 }
 
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
-
-function insert_facebook_opengraph_for_homepage() {
-	
-	if ( is_singular() ) return;
-	
-	if ( is_front_page() ) {
-	
-		echo "<meta property='og:title' content='" . get_the_title() . "' />";
-		
-		echo "<meta property='og:site_name' content='" . get_bloginfo( 'name' ) . "' />";
-		
-		echo "<meta property='og:url' content='" . home_url( '/' ) . "' />";
-		
-		echo "<meta property='og:description' content='" .  get_bloginfo( 'description', 'show' ) . "' />";
-		
-		echo "<meta property='og:type' content='article' />";
-		
-		echo '<meta property="og:image" content="' . get_stylesheet_directory_uri() . "/images/default-thumbnail.png" . '"/>';
-		
-		echo "<meta property='og:image:type' content='image/jpeg />";
-
-		echo "<meta property='og:image:width' content='1024' />";
-
-		echo "<meta property='og:image:height' content='768' />";
-	}
-}
-
-add_action( 'wp_head', 'insert_facebook_opengraph_for_homepage', 5 );
