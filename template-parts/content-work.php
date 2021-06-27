@@ -21,7 +21,7 @@
 
                         <div class="card work mb-5 mb-md-0">
                             <div class="work-preview">
-                                <a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" data-lity data-title="<?php the_title(); ?>" title="Click to enlarge">
+                                <a href="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" data-bs-toggle="modal" data-bs-target="#work-<?php echo $post->ID ?>" title="Click to enlarge">
                                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" class="img-fluid" alt="<?php the_title(); ?>">
                                 </a>
                             </div>
@@ -37,6 +37,16 @@
                                 </div>
                             
                             </div>
+
+                            <div class="modal fade" id="work-<?php echo $post->ID; ?>" data-bs-backdrop="true" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" class="img-fluid" alt="<?php the_title(); ?>">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
 
                         </div>
             
