@@ -105,43 +105,6 @@
     }
 }
 
-#search-modal {
-    .search-form {
-        border-bottom: 2px solid var(--bs-white);
-        position: relative;
-    }
-    button {
-        background-color: transparent;
-        border: 0 none;
-        color: var(--bs-white);
-        font-size: 2rem;
-        line-height: 2rem;
-        padding: 0;
-        position: absolute;
-        top: 17px;
-        right: 0;
-        height: 2rem;
-        width: 2rem;
-    }
-    .fa-search {
-        bottom: 0;
-        color: var(--bs-white);
-        font-size: 2rem;
-        line-height: 2rem;
-        position: absolute;
-        right: 0;
-    }
-    .form-group input {
-        background-color: transparent;
-        border: 0;
-        border-bottom: 4px solid var(--bs-light);
-        border-radius: 0;
-        color: var(--bs-light);
-        font-size: 2rem;
-        padding: .5rem 0;
-    }
-}
-
 @media ( min-width: 768px) {
     .navbar {
         margin: auto;

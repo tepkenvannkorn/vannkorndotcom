@@ -7,8 +7,6 @@
 function vannkorn_scripts() {
 	
 	wp_enqueue_script( 'vannkorn-bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array('jquery'), '2021001', true );
-	
-	wp_enqueue_script( 'vannkorn-lity', get_template_directory_uri() . '/assets/js/lity.js', array('jquery'), '2021003', true );
 
 	if ( is_archive() || is_search() || is_front_page() || is_home() ) {
 

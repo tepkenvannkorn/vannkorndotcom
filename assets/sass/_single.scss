@@ -2,43 +2,6 @@
     h1 {
         font-size: 2.5rem;
         line-height: 1.5;
-    }
-    figure,
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    figcaption {
-        color: var(--bs-gray-dark);
-        font-family: var(--bs-font-monospace);
-        font-size: .8rem;
-        font-style: normal;
-    }
-    a.custom-logo-link img {
-        margin-bottom: 0;
-    }
-    p.site-description {
-        margin-bottom: 0;
-    }
-    .post-thumbnail img {
-        max-width: 100%;
-        width: 100%;
-    }
-}
-
-.single {
-    h2,
-    h3,
-    h4,
-    p,
-    ul,
-    ol,
-    form {
-        max-width: 640px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h1 {
         margin-bottom: 35px;
         margin-top: 35px;
     }
@@ -74,6 +37,38 @@
     }
     textarea {
         max-width: 100%;
+    }
+    h2,
+    h3,
+    h4,
+    p,
+    ul,
+    ol,
+    form {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figure,
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    figcaption {
+        color: var(--bs-gray-dark);
+        font-family: var(--bs-font-monospace);
+        font-size: .8rem;
+        font-style: normal;
+    }
+    a.custom-logo-link img {
+        margin-bottom: 0;
+    }
+    p.site-description {
+        margin-bottom: 0;
+    }
+    .post-thumbnail img {
+        max-width: 100%;
+        width: 100%;
     }
 }
 

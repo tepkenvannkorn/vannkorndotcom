@@ -106,8 +106,6 @@ ul.meta {
     }
 }
 
-a.dark-mode {}
-
 button.loadmore,
 input[type='submit'] {
     background-color: var(--bs-brand);
@@ -155,14 +153,6 @@ input[type='submit'] {
 
 .web-only {
     display: none;
-}
-
-// Popup Search Form
-.lity-container {
-    width: 50%;
-    p.caption {
-        display: none;
-    }
 }
 
 .wpcf7-not-valid-tip,

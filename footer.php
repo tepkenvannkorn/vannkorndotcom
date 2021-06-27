@@ -21,10 +21,6 @@
         </div>
     </footer>
 
-    <div id="search-modal" class="lity-hide">
-        <?php get_search_form(); ?>
-    </div>
-
 <?php wp_footer(); ?>
 
 <?php get_template_part('template-parts/content', 'cookie-consent'); ?>

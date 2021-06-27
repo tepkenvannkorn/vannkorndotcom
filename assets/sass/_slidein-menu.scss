@@ -111,18 +111,6 @@ body.show-menu {
     width: calc(100% - 20px);
 }
 
-.show-menu .slidein-menu ul a:nth-child(1) {
-    transition: all .3s;
-}
-
-.show-menu .slidein-menu ul a:nth-child(2) {
-    transition: all .2s;
-}
-
-.show-menu .slidein-menu ul a:nth-child(3) {
-    transition: all .1s;
-}
-
 .show-menu .slidein-menu-backdrop {
     display: block;
     z-index: 998;
