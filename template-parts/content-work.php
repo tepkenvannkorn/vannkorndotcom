@@ -4,9 +4,6 @@
         <div class="work-wrapper">
 
             <?php
-
-                // because it runs on homepage
-                $paged = (get_query_var('page')) ? get_query_var('page') : 1;
             
                 $work = new WP_Query( array(
                     'post_type' => 'work',
@@ -33,7 +30,7 @@
                                 <a href="<?php the_field('project_url'); ?>" target="_blank" class="work-url mb-3"><?php the_field('project_url'); ?></a>
                                 
                                 <div class="work-text">
-                                    <?php the_content(); ?>
+                                    <?php echo get_the_content(); ?>
                                 </div>
                             
                             </div>

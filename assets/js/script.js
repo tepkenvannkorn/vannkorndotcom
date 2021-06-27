@@ -55,7 +55,7 @@ jQuery(function() {
 
                 jQuery('.work-text').each(function() {
 
-                    var workStr = jQuery(this).text();
+                    var workStr = jQuery(this).text().replace(/\n/g, '<p></p>');
 
                     if (jQuery.trim(workStr).length > textLength) {
 
