@@ -105,6 +105,38 @@
     }
 }
 
+// Search Box
+.site-header .navbar .container {
+    position: relative;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 400px;
+    form {
+        position: relative;
+        button {
+            background-color: transparent;
+            border: 0;
+            color: var(--bs-text);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        input {
+            border-left: 0 !important;
+            border-right: 0 !important;
+            border-top: 0 !important;
+            padding-left: 0;
+        }
+    }
+    button[type='submit'] {
+        text-indent: -9999px;
+    }
+}
+
 @media ( min-width: 768px) {
     .navbar {
         margin: auto;

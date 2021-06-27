@@ -87,7 +87,8 @@ iframe,
 
 @media (min-width: 768px) {
     body.page section.intro h1,
-    body.blog section.intro h1 {
+    body.blog section.intro h1,
+    body.search section.intro h1 {
         max-width: 640px;
         margin-left: auto;
         margin-right: auto;

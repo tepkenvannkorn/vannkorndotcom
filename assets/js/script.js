@@ -18,6 +18,33 @@ jQuery(function() {
 
             this.expandText();
 
+            this.showSearchBox();
+
+        },
+
+        showSearchBox: function() {
+
+            jQuery('a.trigger-search-box').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                jQuery('.search-box').fadeIn(500);
+            });
+
+            // Close from when clicking on the cross sign
+            jQuery('.search-box form button.close').click(function(e) {
+                e.preventDefault();
+
+                jQuery('.search-box').fadeOut(500);
+            });
+
+            // Click anywhere in the page to dismiss the search box 
+            jQuery(document).click(function(e) {
+                if (e.target.id == 'searchControl') {
+                    return;
+                }
+                jQuery('.search-box').fadeOut(500);
+            });
+
         },
 
         expandText: function() {

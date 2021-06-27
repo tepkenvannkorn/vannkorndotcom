@@ -81,9 +81,13 @@
 						
 						<?php echo vannkorn_menu('primary-menu'); ?>
 
-						<li><a href="#search-modal" class="nav-link" data-lity=""><span class="fas fa-search"></span></a></li>
+						<li><a href="#" class="nav-link trigger-search-box"><span class="fas fa-search"></span></a></li>
 
 					</ul>
+				</div>
+
+				<div class="search-box">
+					<?php get_search_form(); ?>
 				</div>
 			</div>
 		</nav>

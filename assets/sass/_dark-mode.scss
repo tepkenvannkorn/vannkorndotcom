@@ -128,6 +128,9 @@ body.body-dark-mode {
     .work .work-detail .read-more {
         color: var(--bs-blue-light);
     }
+    .search-box form button {
+        color: var(--bs-light);
+    }
 }
 
 @media (min-width: 768px) {
