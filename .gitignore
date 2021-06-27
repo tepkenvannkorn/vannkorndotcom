@@ -1,0 +1,6 @@
+assets/.sass-cache/*
+.DS_Store
+LICENSE
+readme.txt
+phpcs.xml.dist
+

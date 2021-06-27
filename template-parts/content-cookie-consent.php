@@ -1,0 +1,4 @@
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+	<noscript><link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"></noscript>	
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"#000"},button:{background:"#f1d600"}},content:{message:"This website uses cookies to analyze traffic and for advertisements. By continuing you agree to the use of these cookies.",dismiss:"Ok, I accept",href:"https://vannkorn.com/privacy-policy"}})});</script>

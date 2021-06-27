@@ -1,0 +1,137 @@
+body.body-dark-mode {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    section.intro {
+        background-image: url("data:image/svg+xml,<svg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'><g fill='O5A79' fill-opacity='0.6' fill-rule='evenodd'><path d='M5 0h1L0 6V5zM6 5v1H5z'/></g></svg>");
+    }
+    footer {
+        background-color: var(--bs-dark);
+        background-image: url("data:image/svg+xml,<svg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'><g fill='O5A79' fill-opacity='0.6' fill-rule='evenodd'><path d='M5 0h1L0 6V5zM6 5v1H5z'/></g></svg>");
+        ul a.nav-link {
+            color: var(--bs-light);
+        }
+    }
+    .navbar-light .navbar-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(138,180,248,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+    .site-branding .site-title a {
+        color: var(--bs-light);
+    }
+    .navbar-light .navbar-nav .nav-link {
+        color: var(--bs-light);
+    }
+    section.intro {
+        background-color: var(--bs-dark);
+    }
+    section.blogs h2,
+    .related-posts h2,
+    h3#reply-title {
+        color: var(--bs-light);
+    }
+    .blog {
+        border-bottom-color: var(--bs-darker);
+    }
+    a {
+        color: var(--bs-blue-light);
+    }
+    button.loadmore,
+    input[type='submit'] {
+        background-color: var(--bs-blue-light);
+        border-color: var(--bs-blue-light);
+        color: var(--bs-text);
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: var(--bs-blue-light);
+            border-color: var(--bs-blue-light);
+        }
+    }
+    .single pre {
+        background-color: var(--bs-darker);
+        code {
+            background-color: var(--bs-darker);
+            span {
+                color: var(--bs-light);
+            }
+        }
+    }
+    .single h2,
+    .single h3 {
+        color: var(--bs-light);
+    }
+    .single code {
+        background-color: var(--bs-darker);
+    }
+    .comments-area h2.comments-title,
+    .comment-list .vcard b,
+    .comment-list .says {
+        color: var(--bs-light);
+    }
+    form p.comment-notes {
+        color: var(--bs-light) !important;
+    }
+    .comments-area {
+        input,
+        optgroup,
+        select,
+        textarea {
+            background-color: var(--bs-dark);
+            border: 1px solid var(--bs-border-gray);
+            color: var(--bs-light);
+        }
+        form#commentform input[type='submit'] {
+            background-color: var(--bs-blue-light);
+            border-color: var(--bs-blue-light);
+            color: var(--bs-text);
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: var(--bs-blue-light);
+                border-color: var(--bs-blue-light);
+            }
+        }
+        .comment-metadata a time {
+            color: var(--bs-gray-light);
+        }
+    }
+    /* Slidein Menu */
+    .slidein-menu {
+        background-color: var(--bs-dark);
+    }
+    .slidein-menu ul.slidein-nav li.current-menu-item a,
+    .slidein-menu ul.slidein-nav a {
+        color: var(--bs-light);
+    }
+    .slidein-menu .close-button:after,
+    .slidein-menu .close-button:before {
+        background-color: var(--bs-gray-dark);
+    }
+    /* Contact Form */
+    .col-form-label {
+        font-size: 1rem;
+    }
+    .form-control {
+        background-color: var(--bs-dark);
+        border: 1px solid var(--bs-border-gray);
+        color: var(--bs-light);
+    }
+    .work {
+        background-color: var(--bs-border-gray);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+        h3 {
+            color: var(--bs-light);
+        }
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    }
+    .work .work-detail .read-more {
+        color: var(--bs-blue-light);
+    }
+}
+
+@media (min-width: 768px) {
+    body.body-dark-mode .comments-area textarea {
+        min-width: calc(100% - 100px);
+    }
+}

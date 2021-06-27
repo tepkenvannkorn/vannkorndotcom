@@ -1,0 +1,38 @@
+/* Footer Style */
+
+footer {
+    background-color: var(--bs-gray);
+    ul {
+        display: flex;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        margin: 15px auto 0;
+        padding: 0;
+        li {
+            margin-bottom: 15px;
+            padding: 0 15px;
+        }
+        a.nav-link {
+            color: var(--bs-brand);
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--bs-link);
+            }
+        }
+    }
+}
+
+@media ( min-width: 768px) {
+    footer ul li {
+        margin-bottom: 0;
+    }
+    footer .nav {
+        flex-wrap: nowrap;
+        li {
+            padding: 0px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import 'fonts';
+@import 'variables';
+body.login {
+    background-color: var(--bs-gray);
+    color: var(--bs-text);
+}
+
+#login {
+    #user_pass {
+        margin-bottom: 10px;
+    }
+    .forgetmenot {
+        float: left;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px !important;
+        label span {
+            font-size: 1rem;
+        }
+    }
+    /** If logo image exists */
+    a.logo {
+        outline: none;
+        img {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px;
+        }
+    }
+}
+
+#login h1 a,
+.login h1 a {
+    display: none;
+}
+
+#login h2,
+.login h2 {
+    display: none;
+}
+
+#login h2 a,
+.login h2 a {
+    color: var(--bs-brand);
+    display: block;
+    font-size: 1.7rem;
+    font-weight: normal;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login #backtoblog,
+.login #nav {
+    display: none;
+}
+
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+    border-radius: 3px;
+    width: 100%;
+    height: 36px !important;
+    line-height: 36px !important;
+    padding: 0 !important;
+    border: 0;
+    background: var(--bs-brand);
+    color: var(--bs-white);
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.login form .input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0 10px;
+    height: 37px;
+    line-height: 37px;
+    margin: 0 0 20px 0;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: -10px 10px 0 0;
+}
+
+.login form .input:focus {
+    -webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .8) !important;
+    box-shadow: 0 0 0px rgba(255, 255, 255, .2) !important;
+    outline: none;
+}
+
+.login form .input::-webkit-input-placeholder {
+    color: #ddd !important;
+}
+
+.login form .input::-moz-placeholder {
+    color: #ddd !important;
+}
+
+.login form .input:-ms-input-placeholder {
+    color: #ddd !important;
+}
+
+.login form .input:-moz-placeholder {
+    color: #ddd !important;
+}
+
+.login label br {
+    display: none;
+}
+
+.login form {
+    padding: 26px 24px 26px;
+}
+
+.login label {
+    font-size: 1rem;
+}
+
+@media only screen and (min-width:300px) and (max-width:320px) {
+    .login .title_login_logo_text {
+        font-size: .9rem;
+    }
+}

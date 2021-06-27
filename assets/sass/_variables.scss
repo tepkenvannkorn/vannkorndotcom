@@ -1,0 +1,48 @@
+/*****************
+ * Site Variables
+ */
+
+ :root {
+    --bs-brand: #000;
+    --bs-text: #000;
+    --bs-link: var(--bs-indigo);
+    --bs-slidein-bg: var(--bs-gray);
+    --bs-cross: var(--bs-brand);
+    /*
+        Fonts
+    --------------------------------------- */
+    --bs-font-sans-serif: "Montserrat", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-serif: "Poppins", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /*
+        Other Colors
+    --------------------------------------- */
+    --bs-footer-bg: #f3f2f1;
+    --bs-blue: #0d6efd;
+    --bs-blue-light: #8ab4f8;
+    --bs-black: #000;
+    --bs-text: #000;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-border-gray: #3c4043;
+    --bs-gray: #f3f4f5;
+    --bs-gray-dark: #777;
+    --bs-gray-light: #969ba1;
+    --bs-primary: #0d6efd;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #dadce0;
+    --bs-dark: #212529;
+    --bs-darker: #1c1b1b;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}

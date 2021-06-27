@@ -1,0 +1,185 @@
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.navbar .container {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dark-mode {
+    min-width: 42px; // equal to hambuger icon
+}
+
+.site-branding {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img {
+        border: 10px solid var(--bs-white);
+        border-radius: 50%;
+        box-sizing: content-box;
+        content: "";
+        display: block;
+        height: 150px;
+        margin-bottom: 0;
+        position: relative;
+        width: 150px;
+        &:before {
+            content: " ";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: -10px;
+            left: -10px;
+            bottom: -10px;
+            right: -10px;
+            border: -10px solid var(--bs-brand);
+            z-index: -1;
+        }
+    }
+    .site-title {
+        margin-bottom: 0;
+        a {
+            color: var(--bs-brand);
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+    .site-description {
+        color: var(--bs-gray-darker);
+        font-size: .8rem;
+    }
+}
+
+.navbar-light {
+    .navbar-brand {
+        color: var(--bs-brand);
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        max-width: 150px;
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--bs-brand-darker);
+        }
+        img {
+            border: 6px solid var(--bs-gray);
+            border-radius: 50%;
+            margin-bottom: 0;
+            margin-right: 10px;
+            width: 60px;
+        }
+    }
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0 10px 0;
+        .nav-item.active .nav-link {
+            text-decoration: underline;
+        }
+        .nav-link {
+            color: var(--bs-text);
+            padding: 0 5px;
+            &:focus,
+            &:active,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        padding-right: 0;
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0,0,0,1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+            color: var(--bs-brand);
+        }
+    }
+}
+
+#search-modal {
+    .search-form {
+        border-bottom: 2px solid var(--bs-white);
+        position: relative;
+    }
+    button {
+        background-color: transparent;
+        border: 0 none;
+        color: var(--bs-white);
+        font-size: 2rem;
+        line-height: 2rem;
+        padding: 0;
+        position: absolute;
+        top: 17px;
+        right: 0;
+        height: 2rem;
+        width: 2rem;
+    }
+    .fa-search {
+        bottom: 0;
+        color: var(--bs-white);
+        font-size: 2rem;
+        line-height: 2rem;
+        position: absolute;
+        right: 0;
+    }
+    .form-group input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 4px solid var(--bs-light);
+        border-radius: 0;
+        color: var(--bs-light);
+        font-size: 2rem;
+        padding: .5rem 0;
+    }
+}
+
+@media ( min-width: 768px) {
+    .navbar {
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-light .navbar-brand img {
+        width: 80px;
+    }
+    .navbar .container {
+        align-items: center;
+    }
+    .site-branding {
+        flex-direction: row;
+        a img {
+            border: 0;
+            height: auto;
+            margin-right: 15px;
+            max-width: 50px;
+        }
+    }
+    .brand-wrapper {
+        text-align: left;
+    }
+    .navbar-light .navbar-nav {
+        margin: 0;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    p.site-description {
+        margin-bottom: 0;
+    }
+}
+
+@media ( min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link {
+        padding: .5rem 1rem;
+    }
+}

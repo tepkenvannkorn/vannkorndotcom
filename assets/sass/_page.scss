@@ -1,0 +1,107 @@
+/* Universal Page Style */
+
+blockquote {
+    color: var(--bs-dark);
+    position: relative;
+    background: var(--bs-gray);
+    padding: 50px 50px 35px 50px;
+    &:before {
+        content: "\f10d";
+        font-family: FontAwesome;
+        font-size: 1.25rem;
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+.featured-image {
+    height: 200px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    img {
+        border: 1px solid var(--bs-gray);
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+figure,
+img {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.two-col-wrapper {
+    .alignleft {
+        float: left;
+    }
+    .text {
+        float: right;
+    }
+}
+
+figcaption {
+    color: var(--bs-text);
+    font-size: .9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+figure.aligncenter {
+    text-align: center;
+}
+
+figure.alignright {
+    text-align: right;
+}
+
+section.hero.page-not-found {
+    background-color: var(--bs-gray);
+    margin-bottom: 30px;
+    padding: 30px 0;
+    h1 {
+        font-size: 2rem;
+        line-height: 1.5;
+        font-weight: 700;
+    }
+}
+
+
+/* Social Media */
+
+.facebook-like {
+    margin-bottom: 20px;
+    max-width: 285px;
+}
+
+.fb-comments {
+    width: 100% !important;
+}
+
+
+/* Videos */
+
+.wp-video-shortcode,
+iframe,
+.mejs-container,
+.wp-video {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    body.page section.intro h1,
+    body.blog section.intro h1 {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .single .wp-block-embed iframe {
+        min-height: 400px;
+    }
+}

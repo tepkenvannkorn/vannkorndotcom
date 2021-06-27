@@ -1,0 +1,27 @@
+/**
+ *	PROJECT			:		Vannkorn
+ *	DEVELOPER		:		Tepken Vannkorn
+ *	DEVELOPER URI	:		https://vannkorn.com
+ *	VERSION			: 		1.0
+ *	DATE			:		06-06-2021
+ */
+
+@import "bootstrap.min";
+@import "variables";
+@import "lity.min";
+@import "misc";
+@import "header";
+@import "slidein-menu";
+@import "home";
+@import "single";
+@import "comment";
+@import "page";
+@import "works";
+@import "footer";
+@import "dark-mode";
+html,
+body {
+    /* Prevent horizontal scrolling bar appears when pinterest extension is installed */
+    max-width: 100%;
+    overflow-x: hidden;
+}
