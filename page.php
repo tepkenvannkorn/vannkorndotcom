@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<section class="intro py-5 mb-3">
+	<section class="intro py-5 mb-5">
 		<div class="container">
 			<header class="entry-header">
 				<?php the_title( '<h1 class="entry-title text-center text-md-start">', '</h1>' ); ?>
