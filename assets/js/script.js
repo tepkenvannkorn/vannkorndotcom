@@ -20,6 +20,36 @@ jQuery(function() {
 
             this.showSearchBox();
 
+            this.toTop(300);
+
+        },
+
+        toTop: function(delay) {
+
+            /* Offset top possition to show the to top button*/
+
+            var whereToShow = 600;
+
+            jQuery(window).scroll(function() {
+
+                if (jQuery(window).scrollTop() > whereToShow) {
+
+                    jQuery('.to-top').fadeIn(delay).css('display', 'flex');
+
+                } else {
+                    jQuery('.to-top').fadeOut(delay);
+                }
+
+            });
+
+            jQuery('.to-top').click(function(e) {
+
+                jQuery('body, html').animate({ scrollTop: 0 }, delay);
+
+                e.preventDefault();
+
+            });
+
         },
 
         showSearchBox: function() {

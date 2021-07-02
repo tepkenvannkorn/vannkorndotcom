@@ -25,6 +25,30 @@ footer {
     }
 }
 
+.to-top {
+    background-color: var(--bs-gray-dark);
+    border-radius: 50%;
+    bottom: 15px;
+    color: var(--bs-light);
+    display: none;
+    padding: 1rem;
+    position: fixed;
+    right: 10px;
+    z-index: 9999;
+    transition: .2s ease-in all;
+    height: 1rem;
+    width: 1rem;
+    align-items: center;
+    justify-content: center;
+    &:focus,
+    &:active,
+    &:hover {
+        background-color: var(--bs-dark);
+        color: var(--bs-light);
+        text-decoration: none;
+    }
+}
+
 @media ( min-width: 768px) {
     footer ul li {
         margin-bottom: 0;

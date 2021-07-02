@@ -134,6 +134,10 @@ body.body-dark-mode {
     .ads p {
         color: var(--bs-light);
     }
+    .to-top {
+        background-color: var(--bs-light);
+        color: var(--bs-dark);
+    }
 }
 
 @media (min-width: 768px) {

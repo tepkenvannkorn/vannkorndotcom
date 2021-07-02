@@ -25,5 +25,7 @@
 
 <?php get_template_part('template-parts/content', 'cookie-consent'); ?>
 
+<a href="#" class="to-top"><span class="fa fa-chevron-up"></span></a>
+
 </body>
 </html>
