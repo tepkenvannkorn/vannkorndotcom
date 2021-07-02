@@ -19,6 +19,12 @@ get_header();
 			<?php get_template_part('template-parts/content', 'meta'); ?>
 
 			<p class="lead pt-5"><?php echo strip_tags( get_the_excerpt() ); ?></p>
+
+			<div class="ads d-flex">
+			<a href="https://www.vultr.com/?ref=8627285-6G" rel="no-follow"><img src="https://www.vultr.com/media/banners/banner_300x250.png" width="300" height="250"></a>
+			<p>Ads: Register now via this link to receive $100 credit from Vultr</p>
+			</div>
+
 		</div>
 	</section>
 

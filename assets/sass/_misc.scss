@@ -165,6 +165,20 @@ input[type='submit'] {
     display: none;
 }
 
+.ads {
+    justify-content: space-between;
+    max-width: 300px;
+    margin: auto;
+    a {
+        width: 60%;
+    }
+    p {
+        color: var(--bs-dark);
+        font-size: .9rem;
+        width: 35%;
+    }
+}
+
 @media ( min-width: 768px) {
     .web-only {
         display: block;
