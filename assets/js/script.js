@@ -81,29 +81,27 @@ jQuery(function() {
 
             if (jQuery('.work').length) {
 
-                var textLength = 120;
-
                 jQuery('.work-text').each(function() {
 
-                    var workStr = jQuery(this).text().replace(/\n/g, '<p></p>');
+                    var firstParagraphToShow = jQuery(this).find('p:first-child').html();
 
-                    if (jQuery.trim(workStr).length > textLength) {
+                    var remainingParagraphsToShow = jQuery(this).html();
 
-                        var newWorkStr = workStr.substring(0, textLength);
+                    if (remainingParagraphsToShow !== 'undefined' || remainingParagraphsToShow !== null) {
 
-                        var removedStr = workStr.substring(textLength, jQuery.trim(workStr).length);
-
-                        jQuery(this).empty().html(newWorkStr);
+                        jQuery(this).empty().html('<p>' + firstParagraphToShow + '</p>');
 
                         jQuery(this).append(' <a href="javascript:void(0);" class="read-more">read more...</a>');
-                        jQuery(this).append('<span class="more-text">' + removedStr + '</span>');
+
+                        jQuery(this).append('<div class="more-text">' + remainingParagraphsToShow + '</div>');
 
                     }
-
                 });
 
                 // When read more link is clicked, expand all texts
-                jQuery('.read-more').on('click', function() {
+                jQuery('body').on('click', '.read-more', function() {
+
+                    jQuery(this).siblings('p').remove();
 
                     jQuery(this).siblings(".more-text").contents().unwrap();
 
